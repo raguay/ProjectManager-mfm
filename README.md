@@ -24,7 +24,7 @@ Below is the list of Command Prompt commands that this extension gives:
 | PM: Go to Template | Opens a Template Folder |
 
 
-## Minimum mfm version:  0.1.5
+## Minimum mfm version:  0.1.6
 
 Due to fixes in the extensions needed to get this extension to work. Creating and using extensions is the easiest way to test out the API!
 
