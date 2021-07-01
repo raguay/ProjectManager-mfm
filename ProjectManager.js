@@ -321,7 +321,8 @@ const ProjectManager = {
   openFileNote: function() {
     if(ProjectManager.noteDir !== '') {
       var cur = ProjectManager.extMan.getExtCommand('getCursor').command();
-      var entry = cur.entry + ProjectManager.noteExt;
+      var entry = {...cur.entry};
+      entry.name = cur.entry.name + ProjectManager.noteExt;
       entry.dir = ProjectManager.noteDir;
       var fs = ProjectManager.extMan.getLocalFS();
       if(!fs.fileExists(entry)) fs.createFile(entry);
