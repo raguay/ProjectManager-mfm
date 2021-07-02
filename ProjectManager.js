@@ -7,7 +7,7 @@ const ProjectManager = {
   log: true,
   noteDir: '',
   noteExt: '.md',
-  ExtName: 'ProjectManager',
+  ExtName: 'ProjectManager-mfm',
   prefName: 'projectmanager.json',
   init: function(extManager) {
     ProjectManager.extMan = extManager;
@@ -396,6 +396,11 @@ const ProjectManager = {
         ProjectManager.templates = [{
           name: "Svelte Template",
           templateDirUrl: "sveltejs/template",
+          local: false,
+          runScript: "npm install;"
+        },{
+          name: "Sapper Template",
+          templateDirUrl: "sveltejs/sapper-template#rollup",
           local: false,
           runScript: "npm install;"
         }];
